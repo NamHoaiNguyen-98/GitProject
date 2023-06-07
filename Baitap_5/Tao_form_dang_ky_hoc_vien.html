@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form đăng ký học viên</title>
+</head>
+<style>
+    form {
+        border-collapse: collapse;
+        border:0px solid black;
+        background-color: #decb65;
+        width: 350px; height: 350px;
+        padding: 5px;
+    }
+    table {
+        border-collapse: collapse;
+        border: 0px solid black;
+        font-family: "Times New Roman";
+        width: 350px; height: 350px;
+    }
+    #tieu_de {
+        border-collapse: collapse;
+        background-color: aqua;
+        color: blue;
+        padding: 2px;
+    }
+    #cot1 {
+        color: darkblue;
+    }
+    .pl {
+        vertical-align: top;
+        color: darkblue;
+    }
+    #tieu_de {
+
+    }
+</style>
+<body>
+<form action="Tao_form_dang_ky_hoc_vien.html" method="get">
+    <table>
+        <tr>
+            <td id="tieu_de" colspan="3">ĐĂNG KÝ HỌC VIÊN</td>
+        </tr>
+        <tr>
+            <td id="cot1">Họ và tên</td>
+            <td colspan="2"><input type="text" name="name" size="25px"></td>
+        </tr>
+        <tr>
+            <td id="cot1">Ngày sinh</td>
+            <td colspan="2"><input type="=text" name="birtday" size="15px"</td>
+        </tr>
+        <tr>
+            <td id="cot1">Giới tính</td>
+            <td><input type="radio" name="render" value="Nam">Nam</td>
+            <td><input type="radio" name="render" value="Nữ">Nữ</td>
+        </tr>
+        <tr>
+            <td class="pl">Địa chỉ</td>
+            <td colspan="2"><textarea cols="25px" rows="5px"></textarea></td>
+        </tr>
+        <tr>
+            <td id="cot1">Lớp</td>
+            <td colspan="2">
+                <select name="class">
+                    <option value="class">--Chọn lớp--</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td id="cot1">Email</td>
+            <td colspan="2"><input type="text" name="email" size="20px"</td>
+        </tr>
+        <tr>
+            <td id="cot1">Điện thoại</td>
+            <td colspan="2"><input type="text" name="phone" size="20px"</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" name="submit" value="Đăng ký"></td>
+            <td><input type="button" name="reset" value="Nhập lại"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
