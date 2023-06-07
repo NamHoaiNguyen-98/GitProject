@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành bài 6</title>
+</head>
+<body>
+<button type="button" onclick="a()">Click Me!</button>
+<br>
+<br>
+<div id="nam"></div>
+<button type="button" onclick="b()"> Click Me!</button>
+<br>
+<br>
+<button type="button" onclick="c()"> Click Me!</button>
+<br>
+<br>
+<button type="button" onclick="d()"> Click Me!</button>
+
+
+</body>
+<script>
+    function a() {
+        alert("Hello World")
+    }
+
+    function b() {
+        document.getElementById('nam').innerHTML = "Hello World"
+    }
+    function c() {
+        document.write("Hello World")
+    }
+    function d() {
+        console.log("Hello World")
+    }
+</script>
+</html>
