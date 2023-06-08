@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+    <style>
+        table {
+            width: 30%
+        }
+    </style>
+</head>
+<body>
+<table>
+    <th>Amount</th>
+    <th>From Currency</th>
+    <th>To Currency</th>
+    <th></th>
+    </tr>
+    <tr>
+        <td><input id="nhap_tien" type="text" name="number" value=""></td>
+        <td>
+            <select id="in" style="width: 100px">
+                <option value="USD">USD</option>
+                <option value="VNĐ">VNĐ</option>
+            </select>
+        </td>
+        <td>
+            <select id="out" style="width: 100px">
+                <option value="VNĐ">VNĐ</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td><input type="button" name="Convert" value="Convert" onclick="chuyendoi()"></td>
+    </tr>
+    <script>
+        function chuyendoi() {
+            let a = document.getElementById("nhap_tien").value;
+            let b = document.getElementById("in").value;
+            let c = document.getElementById("out").value;
+
+            if (b == "VNĐ" && c == "USD") {
+                d = a / 23000
+            } else if (b == "USD" && c == "VNĐ") {
+                d = a * 23000
+            } else {
+                d == a
+            }
+            document.getElementById("ket_qua").innerText = "Kết quả là:" + d
+        }
+    </script>
+</table>
+<p id="ket_qua"></p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<h1>Calculator</h1>
+<input id="nhap_so_1" type="text" name="number" placeholder="Nhập số thứ 1">
+<input id="nhap_so_2" type="text" name="number" placeholder="Nhập số thứ 2"> <br> <br>
+<div>
+<input type="button" name="phep_tinh" value="Cộng(+)" onclick="phep_cong()">
+<input type="button" name="phep_tinh" value="Trừ(-)" onclick="phep_tru()">
+<input type="button" name="phep_tinh" value="Nhân(*)" onclick="phep_nhan()">
+<input type="button" name="phep_tinh" value="Chia(/)" onclick="phep_chia()">
+</div>
+<p id="Result">Kết quả:</p>
+<script>
+    function phep_cong(){
+        let aa= document.getElementById("nhap_so_1").value
+        let bb= document.getElementById("nhap_so_2").value
+        a=parseFloat(aa)
+        b=parseFloat(bb)
+        let c= a+b
+        document.getElementById("Result").innerHTML=" Kết quả: " +c
+    }
+    function phep_tru(){
+        let a= document.getElementById("nhap_so_1").value
+        let b= document.getElementById("nhap_so_2").value
+        let c= a-b
+        document.getElementById("Result").innerHTML=" Kết quả: " +c
+    }
+    function phep_nhan(){
+        let a= document.getElementById("nhap_so_1").value
+        let b= document.getElementById("nhap_so_2").value
+        let c= a*b
+        document.getElementById("Result").innerHTML=" Kết quả: " +c
+    }
+    function phep_chia(){
+        let a= document.getElementById("nhap_so_1").value
+        let b= document.getElementById("nhap_so_2").value
+        let c= a/b
+        document.getElementById("Result").innerHTML=" Kết quả: " +c
+    }
+</script>
+</body>
+</html>
