@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="move()">
+<img id="anh" src="quabong.png" alt="Eror" style="position: absolute ; left: 20px ; top: 20px" width="25%">
+<h3>Click để di chuyển quả bóng </h3>
+<button onclick="moveLeft()">Sang trái</button>
+<button onclick="moveRight()">Sang phải</button>
+<button onclick="moveTop()">Lên trên</button>
+<button onclick="moveDow()">Xuống dưới</button>
+</body>
+<script>
+    let a =document.getElementById("anh");
+    function moveRight() {
+        a.style.left = parseInt(a.style.left) + 15 +"px";
+    }
+    function moveLeft() {
+        a.style.left = parseInt(a.style.left) - 15 +"px";
+    }
+    function moveTop() {
+        a.style.top = parseInt(a.style.top) - 15 +"px";
+    }
+    function moveDow() {
+        a.style.top = parseInt(a.style.top) + 15 +"px";
+    }
+    function abc(e) {
+        switch (e.keyCode) {
+            case 37:
+                moveLeft();
+                break;
+            case 38:
+                moveTop();
+                break;
+            case 39:
+                moveRight();
+                break;
+            case 40:
+                moveDow();
+                break;
+        }
+    }
+    function move() {
+                window.addEventListener('keydown', abc);
+    }
+</script>
+</html>

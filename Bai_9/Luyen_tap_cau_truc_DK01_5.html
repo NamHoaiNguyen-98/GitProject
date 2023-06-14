@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  let a=parseFloat(prompt("Nhập điểm bài kiểm tra 1 tiết"));
+  let b=parseFloat(prompt("Nhập điểm kiểm tra giữa kỳ"));
+  let c=parseFloat(prompt("Nhập điểm bài kiểm tra cuối kỳ"));
+  if((a+b*2+c*3)/6<5) {
+      document.write("Học lực trung bình");
+  } else if((a+b*2+c*3)/6<8) {
+      document.write("Học lực khá");
+  } else {
+      document.write("Học lực giỏi");
+  }
+</script>
+</html>

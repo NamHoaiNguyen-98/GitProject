@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Giải Phương trình bậc 2: ax2+bx+c=0</h1>
+<input type="number" id="number1" placeholder="Nhập a"> --
+<input type="number" id="number2" placeholder="Nhập b"> --
+<input type="number" id="number3" placeholder="Nhập c"> <br> <br>
+<input type="button" onclick="ket_qua()" value="Result">
+
+<br>
+<p id="KQ">Kết quả</p>
+</body>
+<!--<script>-->
+<!--  let a=parseInt(prompt("Nhập vào số a"));-->
+<!--  let b=parseInt(prompt("Nhập vào số b"));-->
+<!--  let c=parseInt(prompt("Nhập vào số c"));-->
+<!--  let denta=((b*b)-(4*a*c));-->
+<!--  if(a==0) {-->
+<!--    let x = -c / b-->
+<!--    document.write("Phương trình có nghiệm x = " + x);-->
+<!--  } else if(b==0) {-->
+<!--    let x= -c-->
+<!--    document.write("Phương trình có nghiệm x = "+ x);-->
+<!--  }-->
+<!--  else if (a!=0) {-->
+<!--    if (denta < 0) {-->
+<!--      document.write("Phương trình vô nghiệm");-->
+<!--    } else if (denta == 0) {-->
+<!--      let x = -b / (2 * a);-->
+<!--      document.write("Phương trình có 2 nghiệm x1 = x2 = " + x);-->
+<!--    } else {-->
+<!--      let x1 = ((-b + Math.sqrt(denta)) / 2) * a;-->
+<!--      let x2 = ((-b - Math.sqrt(denta)) / 2) * a;-->
+<!--      document.write("Phương trình có nghiệm 1 là: " + x1 + "<br>" + "Phương trình có nghiệm 2 là: " + x2);-->
+<!--    }-->
+<!--  }-->
+<!--</script>-->
+<script>
+  function ket_qua() {
+      let a = document.getElementById("number1").value;
+      let b = document.getElementById("number2").value;
+      let c = document.getElementById("number3").value;
+      let denta = ((b * b) - (4 * a * c));
+      if (a == 0) {
+          if (b == 0) {
+              if (c==0) {
+              document.getElementById("KQ").innerHTML = "Phương trình có vô số nghiệm" ;
+          } else {
+                  document.getElementById("KQ").innerHTML = "Phương trình vô nghiệm" ;
+              }
+      } else {
+              let x=-c/b
+          }
+              document.getElementById('KQ').innerHTML= 'phương trình có nghiệm x=' + x;
+          } else if(a!=0) {
+              if (denta < 0) {
+                  document.getElementById("KQ").innerHTML = "Phươnng trình vô nghiệm";
+              } else if (denta == 0) {
+                  let x = -b / (2 * a);
+                  document.getElementById("KQ").innerHTML = "Phương trình có 2 nghiệm x1 = x2 = " + x;
+              } else {
+                  let x1 = ((-b + Math.sqrt(denta)) / 2) * a;
+                  let x2 = ((-b - Math.sqrt(denta)) / 2) * a;
+                  document.getElementById("KQ").innerHTML = "Phương trình có nghiệm 1 là: " + x1 + "<br>" + "Phương trình có nghiệm 2 là: " + x2;
+              }
+          }
+      }
+</script>
+</html>

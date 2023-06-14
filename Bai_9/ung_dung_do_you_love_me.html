@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #no-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <h1 style="text-align: center">Do you love me?</h1>
+    <button onclick="yes()">Yes</button>
+    <button id="no-button" onmouseover="no()">No</button>
+</div>
+</body>
+<script>
+    function yes() {
+        alert("tôi cũng thích bạn")
+    }
+    function no() {
+        let noButton = document.getElementById("no-button");
+        let randomX = Math.random() * window.innerWidth;
+        let randomY = Math.random() * window.innerHeight;
+        noButton.style.left = randomX + "px";
+        noButton.style.top = randomY + "px";
+    }
+</script>
+</html>

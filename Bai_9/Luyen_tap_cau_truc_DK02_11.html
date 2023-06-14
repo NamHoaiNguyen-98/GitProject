@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  let a=parseInt(prompt("Thu nhập hàng tháng của bạn"));
+  if(a>10000000 && a<15000000) {
+    let b = a * 0.05
+    alert("Thuế TNCN phải đóng là " + b +" VNĐ");
+  } else if(a>15000000) {
+    let b=a*0.08
+    alert("Thuế TNCN phải đóng là " + b +" VNĐ");
+  } else {
+    let b=a*0.1
+    alert("Thuế TNCN phải đóng là " + b +" VNĐ");
+  }
+</script>
+</html>

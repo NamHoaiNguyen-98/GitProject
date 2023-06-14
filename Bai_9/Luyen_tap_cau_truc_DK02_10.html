@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=parseFloat(prompt("Nhập vào số KWh"));
+    if(a>0 && a<50) {
+        let b=a*2000
+        alert("Số tiền phải trả: " + b + " VNĐ");
+    }if(a<200) {
+        let b=a*3500
+        alert("Số tiền phải trả: " + b + " VNĐ");
+    } else {
+        let b=a*5000
+        alert("Số tiền phải trả: " + b + " VNĐ");
+    }
+</script>
+</body>
+</html>
