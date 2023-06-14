@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  let a;
+  a= "<table border='1' width='50%' style='text-align: center'>";
+  for (let i=1; i<=10; i++) {
+    a = a + "<tr>";
+    for (let j = 2; j <= 9; j++) {
+      P = i*j
+      a = a + "<td style='width: 11%'>" + j + "x" + i + "="+ P + "</td>";
+    }
+    a= a + "</tr>";
+  }
+   a= a + "</table>";
+  document.write(a)
+    </script>
+</html>

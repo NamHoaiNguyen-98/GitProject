@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  let rec="";
+  let width=+prompt("Nhập chiều dài");
+  let height=+prompt("Nhập chiều rộng")
+  for (let i=1; i<=height; i++) {
+    for (let j=1; j<=width; j++) {
+      if ((i===1) || (j===1) || (i===height) || (j===width)) {
+        rec += "*"
+      } else {
+        rec += "&nbsp&nbsp"
+      }
+  }rec += "<br>"
+  } document.write(rec)
+
+</script>
+</html>

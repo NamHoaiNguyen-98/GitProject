@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let number = +prompt("Nhập số lượng số nguyên tố: ");
+    let a = 2
+  for (let dem=0; dem<number;) {
+        let uoc = 0
+        for (i = 1; i <= a; i++) {
+
+            if (a % i === 0) {
+                uoc++
+            }
+        }
+        if (uoc === 2) {
+            dem++
+            document.write(a+ "<br>")
+        }
+        a++
+    }
+</script>
+</html>

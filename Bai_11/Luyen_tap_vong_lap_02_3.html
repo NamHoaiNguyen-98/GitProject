@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let n = 5;
+    for (let i = 1; i <= n; i++) {
+        let row1 = "";
+        let row2 = "";
+        let row3 = "";
+        let row4 = "";
+        for(let j=1; j<=n; j++) {
+            if(j<=i) {
+                row1 += "*";
+            } else {
+                row1 += " ";
+            }
+            if(j>=i) {
+                row2 += "*";
+            } else {
+                row2 += " ";
+            }
+            if(j>=i+1) {
+                row3 += " ";
+            } else {
+                row3 += "*";
+            }
+            if(j<=i-1) {
+                row4 += " ";
+            } else {
+                row4 += "*"
+            }
+            }
+        console.log(row1+ " "+row2+ " "+row3+" "+row4)
+    }
+</script>
+</html>

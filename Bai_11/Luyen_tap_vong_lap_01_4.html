@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let n1=0, n2=1;
+  while (true) {
+      let x= n1+n2;
+      if (x % 5 == 0) {
+          document.write("tìm được " + x + " là số nhỏ nhất trong dãy chia hết cho 5");
+          break;
+      }
+      n1=n2;
+      n2=x;
+  }
+</script>
+</body>
+</html>

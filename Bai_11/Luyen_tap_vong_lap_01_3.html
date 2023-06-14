@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let number=+prompt("Nhập số lượng số trong dãy số: ");
+  let a1=0 , a2=1, next, i ;
+  for( i=1; i <= number; i++) {
+    document.write(a1+ " ");
+    next= a1+a2;
+    a1= a2;
+    a2= next;
+  }
+</script>
+</body>
+</html>
