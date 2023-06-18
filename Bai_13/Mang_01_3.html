@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  let arr= [1,5,9,13,-11,85,-15];
+  let max= arr[0];
+  let P=0;
+  for (let i=0; i<arr.length; i++) {
+    P += arr[i];
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  TB=P/arr.length;
+  document.write("Max là: "+max+ "<br> Giá trị trung bình các phần tử trong mảng là: "+TB)
+
+</script>
+</html>

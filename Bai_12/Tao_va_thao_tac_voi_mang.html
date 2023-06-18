@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="padding-top: 40px">
+<input type="text" id="input" >--
+<input type="button" id="add" value="add" onclick="add()">--
+<input type="button" id="display" value="display" onclick="display()">
+<div id="result"></div>
+</body>
+<script>
+let x=0;
+let array= Array ();
+function add() {
+    array[x] = document.getElementById("input").value;
+    alert("Phần tử " + array[x] + " có chỉ số " + x);
+    x++;
+    document.getElementById("input").value = " ";
+}
+    function display() {
+        let e= "<hr>";
+        for (i=0; i<array.length; i++){
+            e += "Phần tử "+ i + " có chỉ số " + array[i] +"<br>" ;
+            document.getElementById("result").innerHTML= e
+    }
+
+
+
+
+}
+</script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="chuyen" style=""></p>
+<input type="button" onclick="chuyen_doi()" value="Chuyen_doi">
+</body>
+<script>
+    let b= document.getElementById("chuyen");
+    let arr= [];
+    for (let i=0; i<5; i++) {
+        arr[i] = []
+        for (let j = 0; j < 5; j++) {
+            arr[i][j] = 0;
+        }
+    }
+    let data="";
+    for (let i=0; i<arr.length; i++) {
+        for (let j = 0; j < arr.length; j++) {
+            data += arr[i][j] + "&nbsp&nbsp"
+        }
+        data += "<br>"
+    }
+document.getElementById("chuyen").innerHTML= data
+    function chuyen_doi() {
+        let x = prompt("Nhập x");
+        let y = prompt("Nhập Y");
+        data = "";
+        arr[x][y] = "x"
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr.length; j++) {
+                data += arr[i][j] + "&nbsp&nbsp"
+            }
+            data += "<br>"
+        } document.getElementById("chuyen").innerHTML=data
+    }
+</script>
+</html>
