@@ -1,0 +1,47 @@
+.body1 {
+    width: 100%;
+    max-width: 2300px;
+    height: auto;
+    margin: 0 auto;
+}
+.rice {
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+}
+input {
+    width: 120px;
+    height: 38px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: whitesmoke;
+    background: #339735;
+    margin-left: 50px;
+}
+.laptop {
+    float: left;
+    margin : 80px 80px;
+    font-size : 25px;
+}
+.buy {
+
+    width: 200px;
+    height: 42px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 7px;
+    color: whitesmoke;
+    background: tomato;
+    margin-left: 95px;
+}
+.anh:hover{
+    transform: scale(1.2);
+}
+input:hover{
+    background: limegreen;
+    color: black;
+}
+#div_add {
+    display: none;
+}

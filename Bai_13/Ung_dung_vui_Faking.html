@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3 style="text-align: center " >Viết điều gì bạn muốn</h3>
+<form style="text-align: center" name="nam1" onkeydown="nhap_tu()">
+  <textarea name="nam2" cols="50px" rows="10px" placeholder="Viết j đó đi"></textarea>
+</form>
+</body>
+<script>
+  //   var a= [];
+  //   var text ="";
+  //    a[1]="T"; a[2]="Ô"; a[3]="I"; a[4]=" "; a[5]="L"; a[6]="À"; a[7]=" "; a[8]="N"; a[9]="A"; a[10]="M"; a[11]="!"; a[12]="!";
+  //   function nhap_tu() {
+  //      var t =document.nam1.nam2.value;
+  //     var j= t.length;
+  //     if (j>0) {
+  //       for ( var i=1; i<=j; i++) {
+  //         text += a[i];
+  //         if (i===12) {
+  //           document.nam1.nam2.value= ""
+  //           text =""
+  //         }
+  //       }
+  //     }
+  //     document.nam1.nam2.value = text;
+  //     text=""
+  var a= [];
+  var text= "";
+  a[1]= "T"; a[2]= "ô"; a[3]= "I"; a[4]= " "; a[5]= "L"; a[6]= "À"; a[7]= " "; a[8]= "N";  a[9]= "A"; a[10]= "M"; a[11]= " "; a[12]= "N"; a[13]= "È"; a[14]= "!";
+  function nhap_tu() {
+      var t = document.nam1.nam2.value;
+      var j = t.length;
+      if (j > 0) {
+          for (var i = 1; i <= j; i++) {
+              text += a[i];
+              if (i === 14) {
+                  document.nam1.nam2.value = "";
+                  text = "";
+                  setTimeout("nhap_tu()",0.5)
+              }
+          }
+
+      } document.nam1.nam2.value = text;
+      text=""
+  }
+</script>
+</html>

@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+  let dem=0
+  let x = prompt("Nhập vào 1 chuỗi");
+  let arr = x.split(" ");
+  for (let i=0; i<arr.length; i++) {
+    if (isNaN(arr[i]) === true ) {
+      dem++
+    }
+  } document.write("Số lượng từ trong mảng là: " +dem)
+</script>
 </html>

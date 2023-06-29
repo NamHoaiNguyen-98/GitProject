@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  var x=prompt("Nhập 10 phần tử trong mảng");
+  var V=prompt("Nhập vào số V ");
+  var arr= x.split(" ")
+  for (i=0; i<arr.length; i++) {
+    if (arr[i] === V) {
+      for (j=i; j<arr.length; j++) {
+        arr[j]= arr[j+1]
+      }
+    } arr[arr.length-1]= 0;
+  } document.write(arr)
+
+</script>
+</html>

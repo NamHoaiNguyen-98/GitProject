@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+  let n= prompt("Nhập chiều dài mảng");
+  let arr=[];
+  let dem=0;
+  for (k=0; k<n; k++) {
+      let a= prompt("Nhập phần tử của mảng thứ "+ k)
+      arr.push(a)
+  }
+  console.log(arr)
+  for (let i=0; i<arr.length; i++) {
+      if(isNaN(arr[i]) === false) {
+          dem++
+      }
+  } document.write("có số lượng ký tự số trong mảng là:" +dem)
+</script>
 </html>

@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+  let n = +prompt("Nhập số cột, hàng");
+  let arr =[];
+  let P_chinh=0;
+  let P_phu=0;
+  for (let i=0; i<n ; i++) {
+    arr[i]= [];
+    for (let j=0; j<n; j++) {
+      arr[i][j]= +prompt("Nhập giá trị từng vị trí");
+      if(i===j) {
+        P_chinh += arr[i][j]
+      } if((i+j)===(n-1)) {
+        P_phu += arr[i][j]
+    }
+    }
+  } document.write("Tổng 2 đường chéo là: "+ P_chinh+P_phu)
+</script>
 </html>

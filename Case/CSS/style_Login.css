@@ -1,0 +1,52 @@
+body {
+    width: 100%;
+    background-image: url("../image/background.jpg");
+    overflow-x: hidden;
+    background-size: cover;
+}
+table {
+    width: 550px;
+    height: 230px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid royalblue;
+    background: lavenderblush;
+    padding-bottom: 15px;
+
+}
+.table_container {
+    margin: 200px 800px;
+    width: 80%;
+
+}
+.name {
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+}
+table tr td input {
+    text-align: left;
+    font-size: 20px;
+    height: 35px;
+    width: 350px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+table tr td button {
+    width: 150px;
+    height: 34px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: azure;
+    background: slateblue;
+    box-shadow: 5px 5px 5px black;
+
+}
+td {
+    padding: 10px;
+}
+table h1 {
+    color: maroon;
+    font-size: 40px;
+}

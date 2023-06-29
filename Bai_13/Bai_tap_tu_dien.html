@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div style="padding-top: 30px; padding-left: 10px">Nhập từ khóa :
+<input type="text" id="Search" placeholder="Nhập vào đây">
+<button type="button" onclick="ket_qua()"> Dịch</button>
+    <p id="Result"></p>
+</div>
 </body>
+<script>
+    function ket_qua() {
+        let a = ["banana", "orange", "dog", "cat", "red", "black"];
+        let b = ["quả chuối", "quả cam", "con chó", "con mèo", "màu đỏ", "màu đen"];
+        let count = false
+        x = document.getElementById("Search").value;
+        for (let i = 0; i < a.length; i++) {
+            if (x === a[i]) {
+                document.getElementById("Result").innerHTML = "Kết quả là: " + b[i];
+                count = true;
+            }
+        }
+        if (count === false) {
+            document.getElementById("Result").innerHTML = "Xin lỗi!, không có từ bạn tra"
+        }
+    }
+
+</script>
 </html>

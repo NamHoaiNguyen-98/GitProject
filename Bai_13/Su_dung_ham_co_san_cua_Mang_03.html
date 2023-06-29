@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+  let y = prompt("Nhập vào 1 chuỗi ký tự");
+  let x= y.split("");
+  let UPPER= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let LOWER= "abcdefghijklmnopqrstuvwxyz";
+  let a= [];
+  for (let i=0;i<x.length; i++) {
+      if (UPPER.indexOf(x[i]) !== -1) {
+          a.push(x[i].toLowerCase());
+      } else if (LOWER.indexOf(x[i]) !== -1) {
+          a.push(x[i].toUpperCase());
+      } else {
+          a.push(x[i])
+      }
+  } document.write("chuỗi mới: "+a.join(""))
+
+</script>
 </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    var x= prompt("Nhập 10 phần tử vào mảng");
+    var V= +prompt("Nhập vào số V");
+    var arr= x.split(",",10)
+    let a= 0
+    for (let i=0; i<arr.length; i++) {
+        if (arr[i]==V) {
+            a++
+    }
+    } if (a>0) {
+        document.write("Có "+V+ " trong mảng")
+    } else {
+        document.write("Không có "+V+ " trong mảng ")
+    }
+</script>
+
+
+</body>
+</html>

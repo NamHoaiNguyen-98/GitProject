@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+    let a = prompt("Nhập vào chuỗi 1:");
+    let b = prompt(" Nhập vào chuỗi 2:");
+    let x = a.split(" ");
+    let y = b.split(" ");
+    let dem = false;
+    if (x.length === y.length) {
+
+        for (let i = 0; i < x.length; i++)
+                if (x[i] !== y[i]) {
+                    dem = true
+                }
+        }
+        if (dem) {
+            document.write("2 chuỗi khác nhau")
+        } else {
+            document.write("2 chuỗi giống nhau")
+        }
+    }
+    else {
+    document.write("2 chuỗi khác nhau") }
+</script>
 </html>

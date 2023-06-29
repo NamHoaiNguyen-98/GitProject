@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="padding-left: 390px ; padding-top: 50px">
+<table style="padding: 2px ; background-color: cornsilk" >
+  <tr>
+    <td colspan="4"><h2 style="text-align: center ; color: darkred ; background-color: #decb65" >Converter</h2></td>
+  </tr>
+  <tr>
+    <td><h4>Feed: </h4></td>
+    <td><input type="number" id="input1" placeholder="0.00" oninput="feetToMeters(this.value)" onchange="feetToMeters(this.value)">--></td>
+    <td><h4>Meter: </h4></td>
+    <td><input type="number" id="Result1"></td>
+  </tr>
+  <tr>
+    <td><h4>Meter: </h4></td>
+    <td><input type="number" id="input2" placeholder="0.00" oninput="metersToFeet(this.value)" onchange="metersToFeet(this.value)">--></td>
+    <td><h4>Feet: </h4></td>
+    <td ><input type="number" id="Result2"></td>
+  </tr>
+</table>
+</div>
+</body>
+<script>
+  function feetToMeters(feet) {
+    document.getElementById("Result1").value= feet*0.305
+  }
+  function metersToFeet(meter) {
+    document.getElementById("Result2").value= meter*3.279
+  }
+</script>
+</html>

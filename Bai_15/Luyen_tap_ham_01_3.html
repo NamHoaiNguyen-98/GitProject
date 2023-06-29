@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function random(a,b) {
+        if (a>b) {
+            alert("tham số 1 lớn hơn tham số 2");
+        } else {
+            return a+b
+        }
+    }
+    let x= +prompt("Nhập vào tham số 1: ");
+    let y= +prompt("Nhập vào tham số 2: ");
+    let result = random(x,y);
+    if (result !== undefined) {
+        alert("Tổng của 2 số là: " + result)
+    }
+</script>
+</html>

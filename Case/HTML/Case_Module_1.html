@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LaptopA-Z</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/Style_product.css">
+    <link rel="stylesheet" href="../CSS/style-footer.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="menu">
+        <div class="up">
+            <div class="logo"><a href=""><img src="../image/logo1.jpg" height="532" width="900" alt=""/></a></div>
+            <div class="search">
+                <label><input type="text" placeholder="Tìm kiếm gì đây" id="input-name"></label>
+                <button>Tìm kiếm</button>
+            </div>
+            <div class="login">
+                <a href="Dang_nhap.html">
+                    <button id="login">Đăng nhập</button>
+                    <button id="name">. . .</button>
+                </a>
+            </div>
+        </div>
+        <div class="down">
+            <ul>
+                <li><a href="">Trang chủ</a></li>
+                <li onclick="" ><a href="">Dell</a></li>
+                <li onclick="" ><a href="">Lenovo</a></li>
+                <li onclick=""><a href="">Asus</a></li>
+                <li onclick=""><a href="">Macbook</a></li>
+                <li onclick=""><a href="">Hp</a></li>
+                <li onclick=""><a href="">Acer</a></li>
+                <li onclick="addsanpham()" id="addsp">Thêm sản phẩm</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="div_add">
+        <label><input id="img" type="text" placeholder="Nhập đường dẫn ảnh"></label><br>
+        <label><input id="rice" type="text" placeholder="Nhập giá của sản phẩm"></label><br>
+        <input type="button" id="add" value="Add" onclick="addProduct()">
+        <input type="button" id="update" value="Update" onclick="updateProduct()">
+        <br><br>
+    </div>
+    <div class="body1">
+        <div id="banner"><img src="../image/mtqn.png" alt="">  </div>
+        <p id="result"></p>
+    </div>
+    <div>
+        <table class ="footer">
+           <tr>
+               <td>Laptop AZ</td>
+           </tr>
+           <tr>
+               <td>Đ/c: 105 Giải Phóng, Hai Bà Trưng, Hà Nội</td>
+           </tr>
+           <tr>
+               <td>Hotline: 08.140.88888</td>
+           </tr>
+           <tr>
+               <td>Email: LaptopAz@gmail.com</td>
+           </tr>
+        </table>
+
+
+    </div>
+</div>
+</body>
+<script src="../Javacript/List_product.js"></script>
+<script src="../Javacript/dang-nhap.js"></script>
+</html>

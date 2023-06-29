@@ -1,0 +1,18 @@
+/*.footer p {*/
+/*    display: block;*/
+/*    font-size: 25px;*/
+/*    margin: 0 50px;*/
+/*}*/
+.footer {
+font-size: 23px;
+    color: white;
+    font-weight: initial;
+    background-color: #221334;
+    background-size: cover;
+    width: 100%;
+    max-width: 2300px;
+    height: 100px;
+    margin: 5px 20px;
+    padding: 10px 25px
+}
+

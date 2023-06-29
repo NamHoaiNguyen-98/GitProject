@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h3>Game cờ Caro</h3>
+<p id="game"></p>
+<input type="button" value="Combat" onclick="combat()">
 </body>
+<script>
+  let a= [];
+  let data="";
+  var player= 1;
+  let m= +prompt("Nhập số hàng:");
+  let n= +prompt("Nhập số cột");
+  for (let i=0; i<m; i++) {
+    a[i]=[];
+    for (let j=0; j<n; j++) {
+      a[i][j] = "..."+" &nbsp"
+    }
+  }
+  for (let i=0; i<a.length; i++) {
+    for (let j=0; j<a[i].length; j++) {
+      data += a[i][j]
+    } data += "<br>"
+  } document.getElementById("game").innerHTML= data
+function combat() {
+     data="";
+
+    let x = +prompt("Nhập vị trí theo hàng");
+    let y= +prompt(" Nhập vị trí theo cột");
+    if (player%2===0) {
+      a[x][y]= "x";
+
+    } else {
+      a[x][y]= "o";
+    }
+    player++
+  for (let i=0; i<a.length; i++) {
+    for (let j=0; j<a[i].length; j++) {
+      data += a[i][j]
+    } data += "<br>"
+  } document.getElementById("game").innerHTML= data
+}
+</script>
 </html>

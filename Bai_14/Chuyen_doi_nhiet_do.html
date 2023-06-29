@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table style="padding: 2px" >
+    <tr>
+        <td colspan="2"><h2>Chuyển đổi nhiệt độ</h2></td>
+    </tr>
+    <tr>
+        <td colspan="2"><h4>Type a value in the Fahrenheit field to convert the value to Celcius</h4></td>
+    </tr>
+    <tr>
+        <td><h4>Fahrenheit:</h4></td>
+        <td><input type="number" placeholder="0.00" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)"></td>
+    </tr>
+    <tr>
+        <td><h4>Celcius:</h4></td>
+        <td><p id="Ket_qua"></p></td>
+    </tr>
+</table>
+</body>
+<script>
+    function temperatureConverter(F) {
+         F = +F
+        document.getElementById("Ket_qua").innerHTML = (F-32)/1.8
+    }
+
+
+</script>
+</html>
